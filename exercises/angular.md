@@ -3,6 +3,32 @@
 
 *Note: Be sure that you have the demo API Server running before you start this exercise.*
 
+## Getting Started
+
+* Angular CLI
+* Install it globally to give you access to the `ng` command
+
+```
+npm install -g @angular/cli
+```
+
+[https://cli.angular.io/](https://cli.angular.io/)
+
+### Project Creation
+
+```
+ng new my-app
+cd my-app
+ng serve
+```
+
+### Angular CLI
+
+* The Angular CLI can be used throughout development (it's not just used for project creation)
+  * Component and service creation
+  * New `update` and `add` commands can install packages and run migration and installation scripts
+  * Workspaces can contain multiple application and library projects
+
 ## Components
 
 * The Angular CLI, by default, generates four files for each component in your application
@@ -175,7 +201,25 @@ And its template would look like:
 export class AppModule { }
 ```
 
+## Debugging
+
+* Using Chrome's DevTools
+  * Just set a breakpoint within any .js file in the "Sources" tab
+* Chrome and Firefox browser extensions
+  * [Angular Augury](https://augury.angular.io/)
+* [Debugging in Visual Studio Code](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI)
+
+## Production Builds
+
+```
+ng build --prod
+```
+
+Angular generates files into a `dist` folder
+
 ## Completed Examples
+
+The "Basic" version is the version that we built in this exercise. The "Complete" version implements a basic search feature and includes styles and images.
 
 [Basic](/demos/basic/angular-cli)
 [Complete](/demos/complete/angular-cli)

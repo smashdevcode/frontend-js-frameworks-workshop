@@ -3,6 +3,34 @@
 
 *Note: Be sure that you have the demo API Server running before you start this exercise.*
 
+## Getting Started
+
+* create-react-app
+* No installation necessary!
+  * You CAN install it globally if you'd like, but the docs just recommend using npx
+
+[User Guide](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md)
+
+### Project Creation
+
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+Then open the "src/App.js" file and change the code to:
+
+```javascript
+import React, { Component } from 'react';
+
+export default function App() {
+  return (
+    <h1>Hello world!</h1>
+  );
+}
+```
+
 ## Component Types
 
 * Two types of components
@@ -199,7 +227,25 @@ class App extends Component {
 * State must not be directly mutated
 * Use `setState()` to mutate the state object
 
+## Debugging
+
+* Using Chrome's DevTools
+  * Just set a breakpoint within any .js file in the "Sources" tab
+* Chrome and Firefox browser extensions
+  * [react-devtools](https://github.com/facebook/react-devtools)
+* [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
+
+## Production Build
+
+```
+npm run build
+```
+
+React generates files into a `build` folder
+
 ## Completed Examples
+
+The "Basic" version is the version that we built in this exercise. The "Complete" version implements a basic search feature and includes styles and images.
 
 * [Basic](/demos/basic/react-cli)
 * [Complete](/demos/complete/react-cli)

@@ -5,7 +5,12 @@
 
 ## Vue (Downgraded Experience)
 
-### Project Creation
+### Getting Started
+
+* Include Vue via a CDN and a `<script>` tag
+* No build process
+
+#### Project Creation
 
 Just create an HTML file!
 
@@ -149,6 +154,25 @@ Vue.component('album', {
 
 Introduces single file components!
 
+### Getting Started
+
+* Vue CLI
+* Install it globally to give you access to the `vue` command
+
+```
+npm install -g @vue/cli
+```
+
+[https://github.com/vuejs/vue-cli/blob/dev/docs/README.md](https://github.com/vuejs/vue-cli/blob/dev/docs/README.md)
+
+#### Project Creation
+
+```
+vue create my-app
+cd my-app
+npm run serve
+```
+
 ### Single File Components
 
 * Syntax highlighting
@@ -199,7 +223,26 @@ export default {
 <style scoped>
 </style>
 ```
+
+## Debugging
+
+* Using Chrome's DevTools
+  * Just set a breakpoint within any .js file in the "Sources" tab
+* Chrome and Firefox browser extensions
+  * [vue-devtools](https://github.com/vuejs/vue-devtools)
+* [Debugging in Visual Studio Code](https://vuejs.org/v2/cookbook/debugging-in-vscode.html)
+
+## Production Builds
+
+```
+npm run build
+```
+
+Vue generates files into a `dist` folder
+
 ### Completed Examples
+
+The "Basic" version is the version that we built in this exercise. The "Complete" version implements a basic search feature and includes styles and images.
 
 * [Basic](/demos/basic/vue-cli)
 * [Complete](/demos/complete/vue-cli)

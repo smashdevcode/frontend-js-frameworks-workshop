@@ -16,6 +16,14 @@ npm install -g @angular/cli
 npm install -g @vue/cli
 ```
 
+## Browser DevTools
+
+Each of the frameworks has a browser extension available that extends the browser's built-in devtools.
+
+* [react-devtools](https://github.com/facebook/react-devtools)
+* [Angular Augury](https://augury.angular.io/)
+* [vue-devtools](https://github.com/vuejs/vue-devtools)
+
 ## Editor
 
 I'll be using [Visual Studio Code](https://code.visualstudio.com/), but you're welcome to use any code editor or IDE that suits your needs.
@@ -24,6 +32,7 @@ If you're using Visual Studio Code, you can optionally install these extensions:
 
 * [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 * [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
+* [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
 ## Git Tooling (Optional)
 
