@@ -16,6 +16,18 @@ npm install -g @angular/cli
 npm install -g @vue/cli
 ```
 
+## Caching NPM Packages
+
+This step is optional, but if you have the time ahead of attending the workshop, you can run the following CLI commands to create your first React, Angular, and Vue projects.
+
+```
+npx create-react-app my-react-app
+ng new my-angular-app
+vue create my-vue-app
+```
+
+Doing this will build up your local cache of the necessary npm packages (~/.npm on Linux/OS X and %AppData%/npm-cache on Windows), which will speed up the project creation process (packages can be loaded locally from your cache instead of having to be downloaded).
+
 ## Browser DevTools
 
 Each of the frameworks has a browser extension available that extends the browser's built-in devtools.
