@@ -30,6 +30,13 @@ There's so much to talk about... something's got to go!
 * Properties
 * Events
 
+## Prerequisites
+
+* Did everyone get a chance to install the prerequisites?
+* Why are Node.js and npm required?
+  * Used to support the tooling that's typically used for React, Angular, and Vue development
+  * Not necessary on the server (just need a server that can serve static files)
+
 ## Exercises!!!
 
 See the files in the "exercises" folder
