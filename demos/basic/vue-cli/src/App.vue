@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <album v-for="album in albums" 
+      v-bind:album="album" 
+      v-bind:key="album.id"
+      v-on:view-details="handleViewDetails"></album>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Album from './components/Album.vue'
 
 export default {
   name: 'app',
+  data: function() {
+    return {
+      albums: []
+    };
+  },
   components: {
-    HelloWorld
+    Album
+  },
+  methods: {
+    handleViewDetails(albumId) {
+      alert(`View details! (Album ID: ${albumId})`);
+    }
+  },
+  created() {
+    fetch('http://localhost:3000/albums')
+      .then(response => response.json())
+      .then(data => this.albums = data);
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

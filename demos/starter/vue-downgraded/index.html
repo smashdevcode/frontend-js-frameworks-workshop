@@ -1,0 +1,21 @@
+<html>
+
+<head></head>
+
+<body>
+  <div id="app">
+    <h2 v-text="appName"></h2>
+  </div>
+
+  <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        appName: 'Our Awesome App!'
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -104,6 +104,11 @@
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "angular-cli:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-cli:serve:production"
+            }
           }
         },
         "lint": {
